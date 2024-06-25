@@ -10,12 +10,12 @@ window.onload = () => {
 class construktor<S extends string> {
     functionOnn (ids:S , nameIds:S , textFotInner:S) {
         let proc: number = 0;
-    const e = document.getElementById(ids)
-    const div = document.createElement('div');
+    const e =<HTMLScriptElement> document.getElementById(ids)
+    const div =<HTMLDivElement>document.createElement('div');
     div.id = nameIds;
     div.innerHTML = textFotInner;
     div.style.opacity = `${proc}%`;
-    e!.appendChild(div)
+    e.appendChild(div)
     const int = setInterval(() => {
         if (proc < 100) {
             proc+= 10;
