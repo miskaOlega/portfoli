@@ -153,7 +153,7 @@ div#technology {
     background-color: wheat;
     ol li {
         margin-left: 3vb;
-        font-size: 2.5vb;
+        font-size: 2.3vb;
     }
 }
 
@@ -175,9 +175,19 @@ div#aboutMe {
     background-color: wheat;
     flex-basis: 17vh;
     width: 89vh;
+    p::first-letter {
+        margin-left: 2vh;
+    }
+    p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2vh;
+        margin: 0.5vh 1vh 1vh 1vh;
+        text-align: justify;
+       
+    }
 }
 
-div#desire {
+div#workExperience {
     background-color: wheat;
     flex-basis: 16vh;
     width: 89vh;
