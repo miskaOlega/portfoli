@@ -5,6 +5,7 @@ window.onload = () => {
     gitReact.onmouseout = gitReactFunctionOff;
     gitJS.onmouseover = gitJSFunctionOnn;
     gitJS.onmouseout = gitJSFunctionOff;
+    const tableOwerflow = <HTMLCollection>document.getElementsByClassName("tables");
 }
 
 class construktor<S extends string> {
@@ -29,6 +30,10 @@ class construktor<S extends string> {
     functionOff (ids: S) {
         const div = document.querySelector(ids);
         div!.remove();
+    };
+
+    tableFunction(idTable: number) {
+        const tableOwerflow = <HTMLCollection>document.getElementsByClassName("tables");
     }
 }
 

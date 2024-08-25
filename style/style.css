@@ -136,8 +136,15 @@ div#rightContent {
 div#container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 98vh;
+    div.tables {
+        transition: 1s all ease;
+        overflow: hidden;
+        background-color: wheat;
+        flex-basis: 7.5vh;
+        width: 89vh;
+        margin-top: 1vh;
+    }
     h1 {
         border-bottom: 0.1vh solid black;
         font-size: 4vb;
@@ -148,9 +155,6 @@ div#container {
 }
 
 div#technology {
-    flex-basis: 17vh;
-    width: 89vh;
-    background-color: wheat;
     ol li {
         margin-left: 3vb;
         font-size: 2.3vb;
@@ -158,9 +162,6 @@ div#technology {
 }
 
 div#git {
-    background-color: wheat;
-    flex-basis: 17vh;
-    width: 89vh;
     ol {
     margin-left: 3vb;
     }
@@ -172,9 +173,6 @@ div#git {
     }
 }
 div#aboutMe {
-    background-color: wheat;
-    flex-basis: 17vh;
-    width: 89vh;
     p::first-letter {
         margin-left: 2vh;
     }
@@ -188,10 +186,10 @@ div#aboutMe {
 }
 
 div#workExperience {
-    background-color: wheat;
-    flex-basis: 16vh;
-    width: 89vh;
+    
 }
+
+
 
 #git1 {
     border-radius: 1vh;
@@ -201,7 +199,6 @@ div#workExperience {
     -webkit-text-stroke: 0px black;
     position: absolute;
     bottom: 5vh;
-    left: -5vh;
     font-size: 1.5vh;
     font-family: sans-serif;
 }
@@ -214,7 +211,6 @@ div#workExperience {
     -webkit-text-stroke: 0px black;
     position: absolute;
     bottom: 5vh;
-    left: -5vh;
     font-size: 1.5vh;
     font-family: sans-serif;
 }
